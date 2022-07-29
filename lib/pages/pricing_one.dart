@@ -125,6 +125,32 @@ class _PricingOneState extends State<PricingOne> {
               '10K'),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xffAFEA0D),
+        items: [
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 10.0),
+              child: Text('Upgrade Now',
+                  style: GoogleFonts.poppins(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  )),
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 10.0, left: 100),
+              child: Image.asset(
+                'assets/right_arrow.png',
+                width: 26,
+              ),
+            ),
+            label: '',
+          ),
+        ],
+      ),
     );
   }
 }
