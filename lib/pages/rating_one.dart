@@ -18,8 +18,8 @@ class RatingOne extends StatelessWidget {
             ),
           ),
           SizedBox(height: 25),
-          Text("Pizza Balado", style: foodTextStyle),
-          Text("Rp 500.000", style: priceTextStyle),
+          Text("Tahu Sumedang", style: foodTextStyle),
+          Text("Rp 150.000", style: priceTextStyle),
           SizedBox(height: 50),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
