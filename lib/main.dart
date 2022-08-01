@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:weekdays/pages/empty_two.dart';
 import 'package:weekdays/pages/emty_one.dart';
 import 'package:weekdays/pages/pricing_one.dart';
+import 'package:weekdays/pages/pricing_two.dart';
+import 'package:weekdays/pages/random_one.dart';
 import 'package:weekdays/pages/rating_one.dart';
 import 'package:weekdays/pages/rating_two.dart';
 import 'package:weekdays/pages/sign_one.dart';
@@ -20,7 +22,7 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PricingOne(),
+      home: RandomOne(),
     );
   }
 }
