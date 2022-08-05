@@ -84,27 +84,78 @@ class RandomTwo extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 20),
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0, right: 6),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
+                // Padding(
+                //   padding: const EdgeInsets.only(left: 20.0, right: 6),
+                //   child: Row(
+                //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //     children: [
+                //       Column(
+                //         crossAxisAlignment: CrossAxisAlignment.start,
+                //         children: [
+                //           Text(
+                //             "\$22.00",
+                //             style: GoogleFonts.poppins(
+                //               color: Color.fromARGB(255, 28, 51, 201),
+                //               fontSize: 18,
+                //               fontWeight: FontWeight.w600,
+                //             ),
+                //           ),
+                //           Text("/Night"),
+                //         ],
+                //       ),
+                //       Container(
+                //         width: 170,
+                //         height: 50,
+                //         child: TextButton(
+                //           style: TextButton.styleFrom(
+                //             shadowColor: Color.fromARGB(255, 28, 51, 201),
+                //             elevation: 8,
+                //             backgroundColor: Color.fromARGB(255, 28, 51, 201),
+                //             shape: RoundedRectangleBorder(
+                //               borderRadius: BorderRadius.circular(20),
+                //             ),
+                //           ),
+                //           onPressed: () {},
+                //           child: Text(
+                //             "Checkout Now",
+                //             style: GoogleFonts.poppins(
+                //               color: Color(0xffffffff),
+                //               fontSize: 18,
+                //               fontWeight: FontWeight.w600,
+                //             ),
+                //           ),
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // )
+                BottomNavigationBar(
+                  elevation: 0,
+                  type: BottomNavigationBarType.fixed,
+                  items: <BottomNavigationBarItem>[
+                    BottomNavigationBarItem(
+                      icon: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            "\$22.00",
-                            style: GoogleFonts.poppins(
-                              color: Color.fromARGB(255, 28, 51, 201),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          Text("/Night"),
+                          Text("\$22.00",
+                              style: GoogleFonts.poppins(
+                                color: Color.fromARGB(255, 28, 51, 201),
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                              )),
+                          Text("/Night",
+                              style: GoogleFonts.poppins(
+                                color: Color(0xff000000),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w300,
+                              )),
                         ],
                       ),
-                      Container(
-                        width: 170,
+                      label: "",
+                    ),
+                    BottomNavigationBarItem(
+                      icon: Container(
+                        width: 150,
                         height: 50,
                         child: TextButton(
                           style: TextButton.styleFrom(
@@ -112,22 +163,21 @@ class RandomTwo extends StatelessWidget {
                             elevation: 8,
                             backgroundColor: Color.fromARGB(255, 28, 51, 201),
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(16),
                             ),
                           ),
                           onPressed: () {},
-                          child: Text(
-                            "Checkout Now",
-                            style: GoogleFonts.poppins(
-                              color: Color(0xffffffff),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
+                          child: Text("Checkout ",
+                              style: GoogleFonts.poppins(
+                                color: Color(0xffffffff),
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                              )),
                         ),
                       ),
-                    ],
-                  ),
+                      label: "",
+                    ),
+                  ],
                 )
               ],
             ),
